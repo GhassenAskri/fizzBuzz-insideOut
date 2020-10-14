@@ -53,9 +53,9 @@ describe('array of numbers that contains ' +
         const arrayNumbers = [1,2,15,9,10,100]
         const numbersAsStrings = convertNumbersToStrings(arrayNumbers)
 
-        const finalString = printStrings(numbersAsStrings)
+        const FizzBuzz = printStrings(numbersAsStrings)
 
-        expect(finalString).toStrictEqual('1 2 fizzbuzz fizz buzz buzz')
+        expect(FizzBuzz).toStrictEqual('1 2 fizzbuzz fizz buzz buzz')
     });
 
 });

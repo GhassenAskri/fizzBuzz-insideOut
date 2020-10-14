@@ -1,12 +1,14 @@
+const isDivisibleBy = (divider) => (number) => {
+    return number % divider === 0;
+}
+const isDivisibleByThree = isDivisibleBy(3);
+const isDivisibleByFive = isDivisibleBy(5);
+const isDivisibleByThreeAndFive = isDivisibleBy(15);
+
 export const fizzBuzz = (number) => {
-    const multipleOfThree = number % 3 === 0;
-    const multipleOfFive = number % 5 === 0;
-    const multipleOfThreeAndFive = multipleOfThree && multipleOfFive;
-
-
-    return multipleOfThreeAndFive ? 'fizzbuzz' :
-        (multipleOfThree ? 'fizz' :
-                (multipleOfFive ? 'buzz' : number.toString())
+    return isDivisibleByThreeAndFive(number) ? 'fizzbuzz' :
+        (isDivisibleByThree(number) ? 'fizz' :
+                (isDivisibleByFive(number) ? 'buzz' : number.toString())
         )
 }
 
