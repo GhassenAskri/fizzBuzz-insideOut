@@ -13,7 +13,7 @@ export const fizzBuzz = (number) => {
 export const calculateFizzBuzz = (arrayNumbers) => {
     return arrayNumbers
         .map(fizzBuzz)
-        .reduce((acc, val) => acc + ' ' + val);
+        .reduce((acc, val) => acc + ' ' + val) ;
 }
 
 
