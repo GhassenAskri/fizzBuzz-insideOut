@@ -20,5 +20,3 @@ First, write a test block for numbers that are neither divisible by 3 nor divisi
 Second, write a test block for numbers that are divisible by 5.
 Third, write a test block for numbers that are divisible by 3 and 5.
 Fourth, write a test block for array of numbers to return a string that treats all the constraints.
-
-
