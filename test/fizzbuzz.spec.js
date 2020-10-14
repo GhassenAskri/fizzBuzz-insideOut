@@ -1,4 +1,4 @@
-import {fizzBuzz,calculateFizzBuzz} from '../src/fizzbuzz'
+import {fizzBuzz,printStrings,convertNumbersToStrings} from '../src/fizzbuzz'
 
 describe('numbers that are not multiple ' +
     'of 3 or 5 or both', () => {
@@ -51,8 +51,11 @@ describe('array of numbers that contains ' +
     'and multiples of them both', () => {
     test('When I calculate fizzbuzz for [1,2,15,9,10,100], i get back 1 2 fizzbuzz fizz buzz buzz', () => {
         const arrayNumbers = [1,2,15,9,10,100]
+        const numbersAsStrings = convertNumbersToStrings(arrayNumbers)
 
-        expect(calculateFizzBuzz(arrayNumbers)).toStrictEqual('1 2 fizzbuzz fizz buzz buzz')
+        const finalString = printStrings(numbersAsStrings)
+
+        expect(finalString).toStrictEqual('1 2 fizzbuzz fizz buzz buzz')
     });
 
 });
